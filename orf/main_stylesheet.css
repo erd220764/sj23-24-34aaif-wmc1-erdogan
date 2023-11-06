@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+header {
+  text-align: left;
+  background-color: #16416b;
+  color: white;
+  padding: 25px;
+}
+#News {
+  background-color: steelblue;
+  padding: 20px;
+  margin-top: 10px;
+}
+#News h1 {
+  margin-right: 10px;
+  font-size: 24px;
+  color: white;
+}
+#News h1, #News img {
+  display: inline-block;
+  vertical-align: middle;
+}
+#News h2 {
+  margin-top: 30px;
+  font-size: 20px;
+  color: white;
+}
+
+#News p {
+  margin-top: 10px;
+  font-size: 16px;
+  color: white;
+}
+
+.submenu {
+  display: none;
+  padding: 10px;
+}
+
+#menu-dropdown:hover .submenu {
+  display: block;
+}
+
+#inland, #ausland {
+  background-color: white;
+  color: black;
+  padding-top: 50px;
+}
+
+#inland h1, #ausland h1 {
+  font-size: 24px;
+}
+
+#inland h2, #ausland h2 {
+  font-size: 20px;
+  margin-top: 30px;
+  margin-left: 20px;
+}
+
+#inland p, #ausland p {
+  font-size: 16px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+
+.submenu a {
+  color: white;
+}
+
+nav ul {
+  list-style: none;
+  text-align: left;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+}
+
+/* Section Styles */
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+#Putin {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: lightblue;
+  padding: 20px;
+  text-align: center;
+  border-left: 10px solid dodgerblue;
+}
+
+#Putin img {
+  width: 100px;
+}
+
+#Putin p {
+  margin-top: 10px;
+}
+#Adresse {
+  font-style: italic;
+  border-top: 1px solid #000;
+  padding-top: 20px; 
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: #16416b;
+  color: #fff;
+  padding: 10px 0;
+  text-align: left;
+}
+footer p {
+  color: #fff;
+}
+
+footer nav ul {
+  list-style: none;
+}
+
+footer nav ul li {
+  display: inline;
+  margin-right: 20px;
+  margin-left: 10px;
+}
+
+footer nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
