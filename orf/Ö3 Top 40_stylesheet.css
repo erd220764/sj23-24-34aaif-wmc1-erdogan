@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+header {
+  text-align: left;
+  background-color: #16416b;
+  color: white;
+  padding: 2.5rem;
+}
+
+.submenu {
+  display: none;
+  padding: 1rem;
+}
+
+#menu-dropdown:hover .submenu {
+  display: block;
+}
+
+.submenu a {
+  color: white;
+}
+
+nav ul {
+  list-style: none;
+  text-align: left;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 2rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+}
+section:first-of-type{
+  background-color: steelblue;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+h1 {
+  font-size: 2rem;
+  color: white;
+}
+h2 {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  color: white;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: auto;
+}
+
+table th,
+table td {
+  padding: 1rem;
+  text-align: center;
+}
+
+table th {
+  background-color: #16416b;
+  color: white;
+}
+
+table tr:nth-child(even) {
+  background-color: gainsboro;
+}
+
+table td.col2 {
+  width: 2rem;
+  background-color: #16416b;
+  color: white;
+}
+
+table td.col3,
+table td.col4 {
+  font-weight: bold;
+}
+
+table td.col5 {
+  text-align: left;
+}
+
+table td.col6 {
+  font-style: italic;
+}
+.Adresse {
+  font-style: italic;
+  border-top: 1px solid #000;
+  padding-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+footer {
+  background-color: #16416b;
+  color: white;
+  padding: 1rem;
+  text-align: left;
+}
+footer p {
+  color: white;
+}
+
+footer nav ul {
+  list-style: none;
+}
+
+footer nav ul li {
+  display: inline;
+  margin-right: 2rem;
+  margin-left: 1rem;
+}
+
+footer nav ul li a {
+  text-decoration: none;
+  color: white;
+}

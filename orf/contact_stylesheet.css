@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+header {
+  text-align: left;
+  background-color: #16416b;
+  color: white;
+  padding: 2.5rem;
+}
+
+.submenu {
+  display: none;
+  padding: 1rem;
+}
+
+#menu-dropdown:hover .submenu {
+  display: block;
+}
+
+.submenu a {
+  color: white;
+}
+
+nav ul {
+  list-style: none;
+  text-align: left;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 2rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+}
+section:first-of-type{
+  background-color: steelblue;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+section:first-of-type {
+  background-color: steelblue;
+  padding: 20px;
+  margin-top: 10px;
+}
+section:first-of-type h1 {
+  margin-right: 10px;
+  font-size: 24px;
+  color: white;
+}
+section:first-of-type img,
+section:first-of-type h1 {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 36px;
+}
+section:first-of-type p {
+  margin-top: 20px;
+  font-size: 16px;
+  color: white;
+  font-style: italic;
+}
+section:last-of-type {
+  background-color: gainsboro;
+}
+form input,
+form textarea {
+  margin: 10px;
+}
+
+form button {
+  margin: 20px;
+  background-color: gray;
+  padding: 10px;
+}
+ul form {
+  list-style: none;
+}
+
+ul form li {
+  margin-bottom: 20px;
+}
+
+ul form label {
+  padding: 10px;
+  display: block;
+}
+ul form input[type="text"],
+ul form input[type="email"] {
+  width: 60%;
+  font-size: 16px;
+}
+ul form textarea {
+  width: 60%;
+  height: 200px;
+}
