@@ -7,18 +7,19 @@
 body {
   font-family: "Source Sans Pro", Arial, sans-serif;
   max-width: 1000px;
-  margin: auto;
+  margin: 0 auto;
   padding: 2rem;
 }
 header {
   text-align: left;
   background-color: #16416b;
   color: white;
-  padding: 1rem;
+  padding: 2.5rem;
 }
 
 .submenu {
   display: none;
+  padding: 1rem;
 }
 
 .menu-dropdown:hover .submenu {
@@ -32,7 +33,7 @@ header {
 }
 .News h1 {
   margin-right: 1rem;
-  font-size: 1px;
+  font-size: 2rem;
   color: white;
 }
 .News h1,
@@ -42,7 +43,7 @@ header {
   font-size: 3.6rem;
 }
 .News h2 {
-  margin-top: 2rem;
+  margin-top: 1rem;
   font-size: 1.5rem;
   color: white;
 }
@@ -146,14 +147,14 @@ img {
 .Adresse {
   font-style: italic;
   border-top: 1px solid #000;
-  padding-top: 2rem;
-  margin-bottom: 2rem;
+  padding-top: 20px;
+  margin-bottom: 20px;
 }
 
 footer {
   background-color: #16416b;
   color: white;
-  padding: 1rem;
+  padding: 10px 0;
   text-align: left;
 }
 footer p {
@@ -166,8 +167,8 @@ footer nav ul {
 
 footer nav ul li {
   display: inline;
-  margin-right: 2rem;
-  margin-left: 1rem;
+  margin-right: 20px;
+  margin-left: 10px;
 }
 
 footer nav ul li a {

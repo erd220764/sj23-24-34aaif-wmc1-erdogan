@@ -7,27 +7,22 @@
 body {
   font-family: "Source Sans Pro", Arial, sans-serif;
   max-width: 1000px;
-  margin: 0 auto;
+  margin: auto;
   padding: 2rem;
 }
 header {
   text-align: left;
   background-color: #16416b;
   color: white;
-  padding: 2.5rem;
+  padding: 1rem;
 }
 
 .submenu {
   display: none;
-  padding: 1rem;
 }
 
-#menu-dropdown:hover .submenu {
+.menu-dropdown:hover .submenu {
   display: block;
-}
-
-.submenu a {
-  color: white;
 }
 
 nav ul {
@@ -37,11 +32,12 @@ nav ul {
 
 nav ul li {
   display: inline;
-  margin-right: 2rem;
+  margin-right: 20px;
 }
 
 nav ul li a {
   text-decoration: none;
+  color: white;
 }
 section:first-of-type{
   background-color: steelblue;

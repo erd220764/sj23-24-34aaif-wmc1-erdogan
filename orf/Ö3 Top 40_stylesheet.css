@@ -7,22 +7,21 @@
 body {
   font-family: "Source Sans Pro", Arial, sans-serif;
   max-width: 1000px;
-  margin: 0 auto;
+  margin: auto;
   padding: 2rem;
 }
 header {
   text-align: left;
   background-color: #16416b;
   color: white;
-  padding: 2.5rem;
+  padding: 1rem;
 }
 
 .submenu {
   display: none;
-  padding: 1rem;
 }
 
-#menu-dropdown:hover .submenu {
+.menu-dropdown:hover .submenu {
   display: block;
 }
 
@@ -61,12 +60,15 @@ table {
   width: 100%;
   border-collapse: collapse;
   margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 table th,
 table td {
   padding: 1rem;
   text-align: center;
+
 }
 
 table th {
@@ -98,7 +100,7 @@ table td.col6 {
 }
 .Adresse {
   font-style: italic;
-  border-top: 1px solid #000;
+  border-top: 1px solid #333;
   padding-top: 2rem;
   margin-bottom: 2rem;
 }
@@ -119,7 +121,7 @@ footer nav ul {
 
 footer nav ul li {
   display: inline;
-  margin-right: 2rem;
+  margin-right: 1rem;
   margin-left: 1rem;
 }
 
