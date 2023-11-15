@@ -16,33 +16,66 @@ header {
   color: white;
   padding: 1rem;
 }
+@media only screen and (min-width: 767px) {
+  .menu-list {
+    list-style: none;
+    display: flex;
+  }
 
-.submenu {
-  display: none;
+  .menu-list li {
+    margin-right: 20px;
+  }
+
+  .menu-list li:last-child {
+    margin-right: 0;
+  }
+
+  .menu-list a {
+    text-decoration: none;
+    color: white;
+  }
+  .menu-dropdown {
+    display: none;
+  }
 }
 
-.menu-dropdown:hover .submenu {
-  display: block;
-}
+@media only screen and (max-width: 767px) {
+  .menu-list li:nth-child(1),
+  .menu-list li:nth-child(2),
+  .menu-list li:nth-child(3) {
+    display: none;
+  }
+  .submenu {
+    display: none;
+  }
 
-.submenu a {
-  color: white;
-}
+  .menu-dropdown:hover .submenu {
+    display: block;
+  }
 
-nav ul {
-  list-style: none;
-  text-align: left;
-}
+  .submenu a {
+    color: white;
+  }
 
-nav ul li {
-  display: inline;
-  margin-right: 2rem;
-}
+  nav ul {
+    list-style: none;
+    text-align: left;
+  }
 
-nav ul li a {
-  text-decoration: none;
+  .menu-dropdown:hover ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+  }
+  .menu-dropdown img {
+    margin-right: 0.5rem;
+    height: 1.5rem;
+  }
 }
-section:first-of-type{
+section:first-of-type {
   background-color: steelblue;
   padding: 1rem;
   margin-top: 1rem;
@@ -68,7 +101,6 @@ table th,
 table td {
   padding: 1rem;
   text-align: center;
-
 }
 
 table th {
@@ -121,8 +153,8 @@ footer nav ul {
 
 footer nav ul li {
   display: inline;
-  margin-right: 1rem;
-  margin-left: 1rem;
+  margin-right: 20px;
+  margin-left: 10px;
 }
 
 footer nav ul li a {

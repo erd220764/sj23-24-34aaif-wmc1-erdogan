@@ -11,8 +11,13 @@
 <body>
     <header>
         <nav>
-            <ul>
-                <li class="menu-dropdown">Menü
+            <ul class="menu-list">
+                <li><a href="main.html">News</a></li>
+                <li><a href="Ö3 Top 40.html">Ö3 Top 40</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="menu-dropdown">
+                    <img src="menu.png" alt="menu-dropdown">
+                    <span>Menü</span>
                     <ul class="submenu">
                         <li><a href="main.html">News<br></a></li>
                         <li><a href="Ö3 Top 40.html">Ö3 Top 40<br></a></li>
@@ -22,6 +27,8 @@
             </ul>
         </nav>
     </header>
+
+
     <section id="Adresse">
         <h1>NEWS</h1>
         <img src="orf.svg" alt="orf">
@@ -33,18 +40,23 @@
     </section>
     <section>
         <ul>
-        <form>
-            <li><label for="name">Ihr Name:</label>
-            <input type="text" id="name" name="name"><br></li>
+            <form>
+                <li><label for="name">Ihr Name:</label>
+                    <input type="text" id="name" name="name"><br>
+                </li>
 
-            <li><label for="email">Ihre E-Mail:</label>
-            <input type="email" id="email" name="email"><br></li>
+                <li><label for="email">Ihre E-Mail:</label>
+                    <input type="email" id="email" name="email"><br>
+                </li>
 
-            <li><label for="message">Ihre Nachricht:</label>
-            <textarea id="message" name="message" rows="4"></textarea><br></li>
+                <li><label for="message">Ihre Nachricht:</label>
+                    <textarea id="message" name="message"></textarea><br>
+                </li>
 
-            <button type="submit">Abschicken</button>
-        </form>
+                <input type="checkbox">Ich stimme der Datenschutzerklärung zu.<br>
+
+                <button type="submit">Abschicken</button>
+            </form>
         </ul>
     </section>
 </body>

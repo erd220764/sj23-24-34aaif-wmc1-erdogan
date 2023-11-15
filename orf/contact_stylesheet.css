@@ -17,52 +17,84 @@ header {
   padding: 1rem;
 }
 
-.submenu {
-  display: none;
+@media only screen and (min-width: 767px) {
+  .menu-list {
+    list-style: none;
+    display: flex;
+  }
+
+  .menu-list li {
+    margin-right: 20px;
+  }
+
+  .menu-list li:last-child {
+    margin-right: 0;
+  }
+
+  .menu-list a {
+    text-decoration: none;
+    color: white;
+  }
+  .menu-dropdown {
+    display: none;
+  }
 }
 
-.menu-dropdown:hover .submenu {
-  display: block;
-}
+@media only screen and (max-width: 767px) {
+  .menu-list li:nth-child(1),
+  .menu-list li:nth-child(2),
+  .menu-list li:nth-child(3) {
+    display: none;
+  }
+  .submenu {
+    display: none;
+  }
 
-nav ul {
-  list-style: none;
-  text-align: left;
-}
+  .menu-dropdown:hover .submenu {
+    display: block;
+  }
 
-nav ul li {
-  display: inline;
-  margin-right: 20px;
-}
+  .submenu a {
+    color: white;
+  }
 
-nav ul li a {
-  text-decoration: none;
-  color: white;
-}
-section:first-of-type{
-  background-color: steelblue;
-  padding: 1rem;
-  margin-top: 1rem;
+  nav ul {
+    list-style: none;
+    text-align: left;
+  }
+
+  .menu-dropdown:hover ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+  }
+  .menu-dropdown img {
+    margin-right: 0.5rem;
+    height: 1.5rem;
+  }
 }
 
 section:first-of-type {
   background-color: steelblue;
-  padding: 20px;
-  margin-top: 10px;
+  padding: 2rem;
+  margin-top: 1rem;
 }
+
 section:first-of-type h1 {
-  margin-right: 10px;
-  font-size: 24px;
+  margin-right: 1rem;
   color: white;
 }
 section:first-of-type img,
 section:first-of-type h1 {
   display: inline-block;
   vertical-align: middle;
-  font-size: 36px;
+  font-size: 3rem;
 }
 section:first-of-type p {
-  margin-top: 20px;
+  margin-top: 2rem;
   font-size: 16px;
   color: white;
   font-style: italic;
@@ -77,7 +109,7 @@ form textarea {
 
 form button {
   margin: 20px;
-  background-color: gray;
+  background-color: grey;
   padding: 10px;
 }
 ul form {
