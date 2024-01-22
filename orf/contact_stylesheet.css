@@ -102,8 +102,8 @@ section:first-of-type p {
 section:last-of-type {
   background-color: gainsboro;
 }
-form input,
-form textarea {
+ul input,
+ul textarea {
   margin: 10px;
 }
 
@@ -112,24 +112,24 @@ form button {
   background-color: grey;
   padding: 10px;
 }
-ul form {
+ul {
   list-style: none;
 }
 
-ul form li {
+ul li {
   margin-bottom: 20px;
 }
 
-ul form label {
+ul label {
   padding: 10px;
   display: block;
 }
-ul form input[type="text"],
-ul form input[type="email"] {
+ul input[type="text"],
+ul input[type="email"] {
   width: 60%;
   font-size: 16px;
 }
-ul form textarea {
+ul textarea {
   width: 60%;
   height: 200px;
 }
