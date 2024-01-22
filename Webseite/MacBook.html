@@ -11,41 +11,57 @@
 
 <body>
     <nav id="navbar">
-        <a href="home.html">HOME</a>
-        <a href="iPhone.html">NEW IPHONE</a>
-        <a href="MacBook.html">NEW MACBOOK</a>
-        <a href="kontakt.html">CONTACT</a>
-    </nav>
+        <ul class="menu-list">
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="iPhone.html">NEW IPHONE</a></li>
+            <li><a href="MacBook.html">NEW MACBOOK</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li class="menu-dropdown">
+                <img src="menu_icon.png" alt="menu-dropdown">
+                <ul class="submenu">
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="iPhone.html">NEW IPHONE</a></li>
+                    <li><a href="MacBook.html">NEW MACBOOK</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </li>
+        </ul>
 
-    <section id="macbook">
-        <video autoplay loop muted playsinline>
-            <source src="macbook.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+        <section id="macbook">
+            <video autoplay loop muted playsinline>
+                <source src="macbook.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
 
-        <div class="content">
-            <h1>MacBook Pro
-            </h1>
-            <h2> Mind-blowing.
-                Head-turning.</h2>
-        </div>
-    </section>
-    <section id="chip">
-        <video autoplay loop muted playsinline>
-            <source src="macbook2.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </section>
-    <section id="details">
-        <video autoplay loop muted playsinline>
-            <source src="macbook3.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <div class="content">
-            <h2>The most advanced chips ever
-                built for a personal computer.</h2>
-        </div>
-    </section>
+            <div class="content">
+                <h1>MacBook Pro
+                </h1>
+                <h2> Mind-blowing.
+                    Head-turning.</h2>
+            </div>
+        </section>
+        <section id="chip">
+            <video autoplay loop muted playsinline>
+                <source src="macbook2.mp4" type="video/mp4">
+            </video>
+
+            <div class="chip-content">
+                <h1>The most advanced chips ever <br>
+                    built for a personal computer.
+                </h1>
+            </div>
+
+        </section>
+
+        <section id="details">
+            <video autoplay loop muted playsinline>
+                <source src="macbook3.mp4" type="video/mp4">
+            </video>
+            <div class="details-content">
+                <h1>A pro laptop without equal. <br>
+                    Now in a new color: Space Black.</h1>
+            </div>
+        </section>
 
 </body>
 

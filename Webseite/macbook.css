@@ -1,12 +1,13 @@
-html{
-    background-color: black;
+html {
+  background-color: black;
 }
-#navbar {
+@media only screen and (min-width: 767px) {
+  #navbar {
     background-color: black;
     overflow: hidden;
-    z-index: 1; 
+    z-index: 1;
   }
-  
+
   #navbar a {
     float: left;
     display: block;
@@ -15,53 +16,195 @@ html{
     padding: 14px 16px;
     text-decoration: none;
   }
-  
+
   #navbar a:hover {
     background-color: #ddd;
     color: black;
   }
-  
-  #macbook {
-    position: relative;
-    height: 100vh;
-    overflow: hidden;
+  .menu-list {
+    list-style: none;
+    display: flex;
   }
-  
-  #macbook video {
+
+  .menu-list li {
+    margin-right: 20px;
+  }
+
+  .menu-list li:last-child {
+    margin-right: 0;
+  }
+
+  .menu-list a {
+    text-decoration: none;
+    color: white;
+  }
+  .menu-dropdown {
+    display: none;
+  }
+  #chip video,
+  #details video {
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+  }
+
+  #chip {
     width: 100%;
+    height: 50vh;
+    display: flex;
+  }
+
+  #chip video {
+    width: 50%;
     height: 100%;
     object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 0;
   }
-  
-  .content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+
+  .chip-content {
+    width: 50%;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.7);
     color: white;
+    padding: 50px;
+    text-align: left;
+  }
+
+  #chip h1,
+  #details h1 {
+    max-width: 100%;
+    font-size: 40px;
+    font-family: "Genos", sans-serif;
+  }
+
+  #details video {
+    float: right;
+    bottom: 0px;
+  }
+
+  .details-content {
+    width: 50%;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 50px;
+    text-align: end;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #navbar {
+    background-color: black;
+    overflow: hidden;
     z-index: 1;
   }
-  
-  #macbook h1 {
+
+  #navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  #navbar a:hover {
+    background-color: #ddd;
     color: black;
+  }
+  .menu-list li:nth-child(1),
+  .menu-list li:nth-child(2),
+  .menu-list li:nth-child(3),
+  .menu-list li:nth-child(4) {
+    display: none;
+  }
+  .submenu {
+    display: none;
+  }
+
+  .menu-dropdown:hover .submenu {
+    display: block;
+  }
+
+  .submenu a {
+    color: white;
+  }
+
+  nav ul {
+    list-style: none;
+    text-align: left;
+  }
+
+  .menu-dropdown:hover ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+  }
+  .menu-dropdown img {
+    margin-right: 0.5rem;
+    height: 1.5rem;
+  }
+  #chip,
+  #details {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #chip video,
+  #details video {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .chip-content,
+  .details-content {
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    width: 100%;
+  }
+
+  #chip h1,
+  #details h1 {
     max-width: 100%;
-    font-size: 6em;
-    font-family: 'Genos', sans-serif;
+    font-size: 24px;
+    font-family: "Genos", sans-serif;
   }
-  #macbook h2{
-    color: black;
-  }
-  
-  #chip video{
-    width: 100%;
-    height: 100%;
-  }
-  #details video{
-    width: 100%;
-    height: 100%;
-  }
+}
+
+#macbook {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#macbook video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 1;
+}
+
+.content h1 {
+  max-width: 100%;
+  font-size: 6em;
+  font-family: "Genos", sans-serif;
+  color: black;
+}
